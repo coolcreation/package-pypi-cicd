@@ -65,7 +65,7 @@ jobs:
 
     environment:
       name: testpypi   # must match Environment name (optional) here: https://test.pypi.org/manage/project/example-package-jeff-creations/settings/publishing/
-      url: https://test.pypi.org/simple/ example-package-jeff-creations
+      url: https://test.pypi.org/simple/example-package-jeff-creations
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
