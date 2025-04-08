@@ -21,7 +21,22 @@ python -m pytest
 3: Push your changes to GitHub.
 
 4: In GitHub go to actions, create new workflow, set up a workflow yourself.
-    Give the .yml file a name, like publish.yml.
+    Give the .yml file a name, like publish.yml.  
+
+This is good info on yml:  
+https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/#checking-out-the-project-and-building-distributions
+
+- For secrets if we want that:
+```
+- name: Publish package to TestPyPI
+  uses: pypa/gh-action-pypi-publish@release/v1
+  with:
+    password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+    repository-url: https://test.pypi.org/legacy/
+```
+#### If builds keep 404 error make sure to change the version per run
+
+**♦ always run from `main`, because main will trigger workflow!**  
 
 5: Copy and paste the contents of the provided .yml file into yours.
     You will need to change any reference to example_package to your package name.

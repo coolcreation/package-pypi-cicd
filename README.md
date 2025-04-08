@@ -6,3 +6,9 @@
 ```
 python -m pytest
 ```
+
+**My PyPi package:**
+
+```
+pip install -i https://test.pypi.org/simple/ example-package-jeff-creations
+```
