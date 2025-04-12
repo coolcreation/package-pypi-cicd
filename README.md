@@ -12,3 +12,5 @@ python -m pytest
 ```
 pip install -i https://test.pypi.org/simple/ example-package-jeff-creations
 ```
+
+**Changes in this repo should trigger CICD workflow and update in Jenkins too**
