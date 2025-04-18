@@ -1,16 +1,16 @@
 [build-system]
-requires = ["hatchling == 1.26.3"]
+requires = ["hatchling == 1.21"]
 build-backend = "hatchling.build"
 
 [project]
 name = "example_package_jeff_creations"
-version = "0.0.9"
+version = "0.1.0"
 authors = [
   { name="Jeff B" },
 ]
 description = "A small example package"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
