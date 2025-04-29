@@ -4,5 +4,6 @@ def add_one(number):
 def sub_one(number):
     return number - 1
 
-
+def multiply(number, multiple):
+    return number * multiple
 
