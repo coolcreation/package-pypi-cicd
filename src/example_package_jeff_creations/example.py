@@ -4,6 +4,9 @@ def add_one(number):
 def sub_one(number):
     return number - 1
 
+def add(number, addNum):
+    return number - addNum
+
 def subtract(number, minusNum):
     return number - minusNum
 
